@@ -1,0 +1,41 @@
+[package]
+name = "basic"
+version = "0.1.0"
+summary = "A package built with build2 + bux2!"
+license = "MIT"
+
+[[target]]
+type = "exe"
+name = "basic"
+src = "basic"
+
+[extensions]
+sources = "cpp"
+headers = "hpp"
+modules = "mpp"
+
+[dependencies]
+# https://cppget.org repositories to fetch from.
+# stable, testing, alpha, beta, and legacy are available.
+# channels = ["stable"]
+# libhello = { version = "1.0.0", targets = ["hello"] }
+
+[profile.debug]
+# Select your debug configurations
+std = "latest"
+compiler = "clang++"
+coptions = ["-g"]
+poptions = ["-DDEBUGGING"]
+# loptions = []
+# Uncomment to enable C++ modules (C++20)
+# modules = true
+
+[profile.release]
+# Select your release configurations
+std = "latest"
+compiler = "clang++"
+coptions = ["-O2"]
+poptions = ["-DNDEBUG"]
+# loptions = []
+# Uncomment to enable C++ modules (C++20)
+# modules = true

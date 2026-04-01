@@ -1,0 +1,2 @@
+libs =
+exe{basic}: {hxx cxx mxx}{**} $libs

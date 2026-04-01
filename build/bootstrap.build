@@ -1,0 +1,5 @@
+project = basic
+using version
+using config
+using install
+using dist

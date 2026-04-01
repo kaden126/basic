@@ -1,0 +1,6 @@
+: 1
+name: basic
+version: 0.1.0
+license: MIT
+summary: A package built with build2 + bux2!
+
